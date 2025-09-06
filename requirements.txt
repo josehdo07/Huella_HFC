@@ -1,5 +1,5 @@
-Django>=5.0
-pandas
+django>=5.0,<6.0
 gunicorn
+mysqlclient
 dj-database-url
-PyMySQL
+whitenoise[brotli]   # Para servir archivos estáticos en Render
