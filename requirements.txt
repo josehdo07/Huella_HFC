@@ -2,4 +2,6 @@ django>=5.0,<6.0
 gunicorn
 mysqlclient
 dj-database-url
-whitenoise[brotli]   # Para servir archivos estáticos en Render
+whitenoise[brotli]
+pymysql
+
