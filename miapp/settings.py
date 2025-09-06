@@ -1,4 +1,11 @@
+
+import os
+from pathlib import Path
 import dj_database_url
+from decouple import config
+import pymysql
+pymysql.install_as_MySQLdb()
+
 
 """
 Django settings for miapp project.
@@ -76,9 +83,10 @@ WSGI_APPLICATION = 'miapp.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get("DATABASE_URL")
+        default=config("DATABASE_URL")
     )
 }
+
 
 
 # Password validation

@@ -1,7 +1,5 @@
-django>=5.0,<6.0
+Django>=4.0
 gunicorn
-mysqlclient
+psycopg2-binary
 dj-database-url
-whitenoise[brotli]
-pymysql
-
+python-decouple
