@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Registros</title>
+</head>
+<body>
+    <h2>Mis Registros</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th><th>Correo</th><th>Mensaje</th><th>Fecha</th>
+        </tr>
+        {% for r in registros %}
+        <tr>
+            <td>{{ r.nombre }}</td>
+            <td>{{ r.correo }}</td>
+            <td>{{ r.mensaje }}</td>
+            <td>{{ r.fecha }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'nuevo_registro' %}">Nuevo</a> |
+    <a href="{% url 'exportar_csv' %}">Exportar CSV</a>
+</body>
+</html>
