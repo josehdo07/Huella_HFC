@@ -3,8 +3,7 @@ import os
 from pathlib import Path
 import dj_database_url
 from decouple import config
-import pymysql
-pymysql.install_as_MySQLdb()
+
 
 
 """
